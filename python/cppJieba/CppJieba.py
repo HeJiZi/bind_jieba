@@ -16,7 +16,9 @@ def cut(sentence):
     return _jp.cut(sentence)
 
 def load_userdict(dict_path):
-    _DICT_PATH = dict_path
+    global _USER_DICT_PATH
+    _USER_DICT_PATH = dict_path
 
 def set_stop_word(stop_word_path):
+    global _STOP_WORD_PATH
     _STOP_WORD_PATH = stop_word_path
